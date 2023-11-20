@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div a{                 /*  B.1 */
+            color: red;
+        }
+
+        nav > h2{               /*  B.2 */
+            color: red;
+            background-color: yellow;     
+        }
+       
+        nav p:first-of-type {       /*  B.3 */
+            color: red;
+         }
+         
+         a[href]{                      /*  C.1 */
+            color: red;
+            text-decoration: none;
+         }
+
+         a[class="active"]{           /*  C.2 */
+            color: green;
+            background-color: yellow;
+         }
+
+         a[target="_self"]{             /*  C.3 */
+            background-color: purple;
+         }
+
+         p::after{                    /*  D.1 */
+            content:"..." ;
+         }
+
+         li::marker{                   /*  D.2 */
+            color: green;
+         }
+
+         p:nth-child(even)::first-letter{      /*  D.3 */
+            color: red;
+            font-size: 30px;
+         }
+
+
+
+
+
+    </style>
+</head>
+<body>
+   <header>
+    <nav>
+        <h2>TOI</h2>
+        <div>
+            <h2>Menu</h2>
+            <ul>
+        <li><a href="#" target="_blank">HOME</a></li>
+        <li><a href="#" class="active" target="_self">ABOUT</a></li>
+        <li><a href="#" target="_blank">SERVICES</a></li>
+        <li><a href="#" target="_blank">CONTACT</a></li>
+            </ul>
+        </div>
+        <p>The Times Of India</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error quisquam distinctio
+             dolorum obcaecati voluptates sapiente tenetur dolorem. Natus repellat sunt soluta 
+             nulla delectus sit deleniti quo, harum minima, non corrupti.</p>
+        <p>read articles</p>
+    </nav>
+   </header> 
+</body>
+</html>
+
+      
+
+   
